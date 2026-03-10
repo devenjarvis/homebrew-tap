@@ -5,21 +5,21 @@
 class Moss < Formula
   desc "AI-powered note-taking TUI"
   homepage "https://github.com/devenjarvis/moss"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/devenjarvis/moss/releases/download/v0.3.0/moss_0.3.0_darwin_amd64.tar.gz"
-      sha256 "99753976f32e24e789490bfa3dc4b4d5f7bfa99eae26bb31a86f46a8f50b66a3"
+      url "https://github.com/devenjarvis/moss/releases/download/v0.4.0/moss_0.4.0_darwin_amd64.tar.gz"
+      sha256 "23a8b5a302af5c5c10b04f4f3502426677736ca8436295ad72c7b35dde3cb661"
 
       define_method(:install) do
         bin.install "moss"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/devenjarvis/moss/releases/download/v0.3.0/moss_0.3.0_darwin_arm64.tar.gz"
-      sha256 "334e0086293344b3b3af926290aa14eccdd363462714e9a5d4785c4b7bfe9b11"
+      url "https://github.com/devenjarvis/moss/releases/download/v0.4.0/moss_0.4.0_darwin_arm64.tar.gz"
+      sha256 "3b6eda8e1162797792b481536441588361799b33bd5a5a566238c9fcff58264d"
 
       define_method(:install) do
         bin.install "moss"
@@ -29,15 +29,15 @@ class Moss < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devenjarvis/moss/releases/download/v0.3.0/moss_0.3.0_linux_amd64.tar.gz"
-      sha256 "76e9476e673940f2c87a63040f2ac50f95061db7a4abc41ec9d28887b798087c"
+      url "https://github.com/devenjarvis/moss/releases/download/v0.4.0/moss_0.4.0_linux_amd64.tar.gz"
+      sha256 "c7c51c09a699456fd6b99522bef39fcdb5c80d3ed91882fe8bac86be697a916c"
       define_method(:install) do
         bin.install "moss"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devenjarvis/moss/releases/download/v0.3.0/moss_0.3.0_linux_arm64.tar.gz"
-      sha256 "e71ca4aab0cdf689ac9e123b95104cbd885005bd1ba8b3a1e1f372850d847046"
+      url "https://github.com/devenjarvis/moss/releases/download/v0.4.0/moss_0.4.0_linux_arm64.tar.gz"
+      sha256 "65ee08cb4382f7ce07d02e888eff7161bd016a3c097e80e5b375a8b102370cf1"
       define_method(:install) do
         bin.install "moss"
       end
