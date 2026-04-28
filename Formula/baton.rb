@@ -5,21 +5,21 @@
 class Baton < Formula
   desc "Terminal-native TUI for orchestrating multiple Claude Code agents in parallel"
   homepage "https://github.com/devenjarvis/baton"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/devenjarvis/baton/releases/download/v0.3.0/baton_0.3.0_darwin_amd64.tar.gz"
-      sha256 "4f8c803be33b28ab2041f1284cd984ec3cfe5cd150ada0db6b4fe85c798e4ce8"
+      url "https://github.com/devenjarvis/baton/releases/download/v0.4.0/baton_0.4.0_darwin_amd64.tar.gz"
+      sha256 "5d82d678720eb7fe866f3e66ea3bbd24e7308fdb43f23f53ba0f033adacad49b"
 
       define_method(:install) do
         bin.install "baton"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/devenjarvis/baton/releases/download/v0.3.0/baton_0.3.0_darwin_arm64.tar.gz"
-      sha256 "0911a23ec9a9ceae5647d6a515403a833c8ce137ffb93ba57e66e0111d0148a6"
+      url "https://github.com/devenjarvis/baton/releases/download/v0.4.0/baton_0.4.0_darwin_arm64.tar.gz"
+      sha256 "d264bd3f94078a90f0a0b28af2ddaad973b0b72729f4c5743b39047df616d6b1"
 
       define_method(:install) do
         bin.install "baton"
@@ -29,15 +29,15 @@ class Baton < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devenjarvis/baton/releases/download/v0.3.0/baton_0.3.0_linux_amd64.tar.gz"
-      sha256 "4a3a2fe133f9198c292f18f46e2173087ab2a160a28c9ae43a749c2975a2c918"
+      url "https://github.com/devenjarvis/baton/releases/download/v0.4.0/baton_0.4.0_linux_amd64.tar.gz"
+      sha256 "85917fc2d0b5a7bd03fcc083da2cb3b0cabf31afee975a777f63145bd7c22fee"
       define_method(:install) do
         bin.install "baton"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devenjarvis/baton/releases/download/v0.3.0/baton_0.3.0_linux_arm64.tar.gz"
-      sha256 "fc5e93fd6196e555c7c5cdd97a6f0fbe18a72b8d21d172032c1373da84fd16fa"
+      url "https://github.com/devenjarvis/baton/releases/download/v0.4.0/baton_0.4.0_linux_arm64.tar.gz"
+      sha256 "273be239bb44ac0b32e01454225bfa7a2cb1bfcbc2eeb0556023c1d0fcd2a2d0"
       define_method(:install) do
         bin.install "baton"
       end
